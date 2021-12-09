@@ -1,0 +1,178 @@
+/* Estilos reutilizables */
+
+.mi-container {
+    padding-left: 17.5vw;
+    padding-right: 17.5vw;
+}
+
+h1 {
+    font-family: "Noto Serif", Georgia, serif;
+    font-weight: 700;
+    line-height: 1.38;
+}
+
+h2 {
+    font-family: "Noto Serif", Georgia, serif;
+    font-weight: 700;
+    line-height: 1.38;
+}
+
+.center-elements-in-cloumns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Header */
+
+.header-container {
+    background-image: url(../img/portada.jpeg);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo-paradisi {
+    animation: opacidad 3s 3;
+}
+
+@keyframes opacidad {
+    0% {
+        opacity: 25%
+    }
+    25% {
+        opacity: 100%
+    }
+    100% {
+        opacity: 25%
+    }
+}
+
+.nav-opacity {
+    opacity: 0.7;
+}
+
+
+/* Main */
+
+.img-galery {
+    max-width: 250px;
+    max-height: 250px;
+    transition: all .2s ease-in-out;
+}
+
+.galery-img-conainer {
+    padding: 1rem;
+    border: 1px solid orange;
+    border-radius: 3px;
+    margin-top: 1rem;
+}
+
+.galery-section {
+    display: flex;
+}
+
+.galery-section a {
+    transition: transform .2s;
+}
+
+.galery-section a :hover {
+    transform: scale(1.5);
+}
+
+.ul-galery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+/* Footer */
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem;
+}
+
+.footer-img {
+    max-width: 15rem;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map-size {
+    max-width: 25rem;
+    max-height: 20rem;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.map-size:hover {
+    transform: scale(1.1);
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    .header-container {
+        min-height: 60vh;
+    }
+    .footer-flex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img-galery:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-container {
+        min-height: 20vh;
+    }
+}
+
+.lightbox-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+@media (max-width:767px) {
+    .lightbox-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+}
+
+.lightbox-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px
+}
+
+.lightbox-gallery .intro p {
+    margin-bottom: 0
+}
+
+.lightbox-gallery .photos {
+    padding-bottom: 20px
+}
+
+.lightbox-gallery .item {
+    padding-bottom: 30px
+}
